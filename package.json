@@ -1,6 +1,6 @@
 {
   "name": "homebridge-solis-New",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A homebridge plugin that collects solar panel generation data from Solis PV inverters and publishes to the HomeKit system.",
   "main": "dist/accessory.js",
   "scripts": {
