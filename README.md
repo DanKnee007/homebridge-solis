@@ -11,7 +11,8 @@
 
 ## About
 
-**Homebridge-solis** is a [homebridge](https://homebridge.io) plugin that collects solar panel generation data from [Solis PV inverters](https://www.ginlong.com/) with attached [data logging sticks](https://www.ginlong.com/accessories2/1083.html) and publishes the collected data to the Apple [HomeKit](https://developer.apple.com/homekit/) ecosystem.
+**Homebridge-solis** is a [homebridge](https://homebridge.io) plugin that collects solar panel generation data from [Solis PV inverters](https://www.ginlong.com/)
+(https://www.ginlong.com/accessories2/1083.html) and publishes the collected data to the Apple [HomeKit](https://developer.apple.com/homekit/) ecosystem.
 
 ## Background
 
@@ -29,7 +30,7 @@ Install an instance of [homebridge](https://homebridge.io) on your network. If y
 
 Once installed, login to the interface and scan the QR code with your iPhone, this will start the process to add the homebridge to your Apple Home instance. 
 
-Once added, login back into the Homebridge Comfig UI X interface, click plugins from the menu, type `solis` as the search term, click install next to the plugin called `homebridge-solis`. You will be asked to provide the IP address and credentials to your inverter's data logging stick. 
+Once added, login back into the Homebridge Comfig UI X interface, click plugins from the menu, type `solis` as the search term, click install next to the plugin called `homebridge-solis`. You will be asked to provide the IP address and credentials to your inverter.  Note that this is Simon's version.   I plan to update it in the future. 
 
 Assuming it's daylight outside, the app should start collecting data immediately, open the Eve [app](https://www.evehome.com/en/eve-app) and select the inverter - its generation data, albeit labelled as consumption data, should be visible as per the above screenshot.
 
@@ -49,4 +50,4 @@ Alternatively the plugin can be configured within the homebridge `config.json`. 
 }
 ```
 
-The username, password and hostname properties all relate to the details associated with the inverter data logging stick.
+The hostname is the IP address of your inverter on your network.  The username and password are the logon credentials for your inverter.
