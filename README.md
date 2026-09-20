@@ -2,12 +2,12 @@
 
 # Homebridge Solis Plugin
 
-<a href="https://www.npmjs.com/package/homebridge-solis"><img title="npm version" src="https://badgen.net/npm/v/homebridge-solis" ></a>
-<a href="https://www.npmjs.com/package/homebridge-solis"><img title="npm downloads" src="https://badgen.net/npm/dt/homebridge-solis" ></a>
+<a href="https://www.npmjs.com/package/homebridge-solis-new"><img title="npm version" src="https://badgen.net/npm/v/homebridge-solis-new" ></a>
+<a href="https://www.npmjs.com/package/homebridge-solis-new"><img title="npm downloads" src="https://badgen.net/npm/dt/homebridge-solis-new" ></a>
 
 </span>
 
-<img src="https://github.com/simonarnell/homebridge-solis/blob/resources/inverter.jpg" align="right" alt="inverter">
+<img src="https://github.com/simonarnell/homebridge-solis-new/blob/resources/inverter.jpg" align="right" alt="inverter">
 
 ## About
 
@@ -20,7 +20,7 @@ Due to Apple's HomeKit currently only natively supporting a limited set of servi
 
 Fortunately [Eve](https://www.evehome.com/en)'s [app](https://www.evehome.com/en/eve-app) supports their own smart outlets that extend the HomeKit API to publish consumption data. The plugin, uses these consumption characteristics to represent PV generation data. In the Eve app, the inverter appears as an outlet that switches on and off according to the sun's intensity and its ability to energise the inverter, in addition the energy generated appears as consumption data.
 
-<img src="https://github.com/simonarnell/homebridge-solis/blob/resources/eve.png" align="left" alt="eve app">
+<img src="https://github.com/simonarnell/homebridge-solis-new/blob/resources/eve.png" align="left" alt="eve app">
 
 ## Instructions
 
@@ -30,7 +30,7 @@ Install an instance of [homebridge](https://homebridge.io) on your network. If y
 
 Once installed, login to the interface and scan the QR code with your iPhone, this will start the process to add the homebridge to your Apple Home instance. 
 
-Once added, login back into the Homebridge Comfig UI X interface, click plugins from the menu, type `solis` as the search term, click install next to the plugin called `homebridge-solis`. You will be asked to provide the IP address and credentials to your inverter.  Note that this is Simon's version.   I plan to update it in the future. 
+Once added, login back into the Homebridge Comfig UI X interface, click plugins from the menu, type `solis` as the search term, click install next to the plugin called `homebridge-solis-new`. You will be asked to provide the IP address and credentials to your inverter.  Note that this is Simon's version.   I plan to update it in the future. 
 
 Assuming it's daylight outside, the app should start collecting data immediately, open the Eve [app](https://www.evehome.com/en/eve-app) and select the inverter - its generation data, albeit labelled as consumption data, should be visible as per the above screenshot.
 
