@@ -292,17 +292,19 @@ class SolisInverter implements AccessoryPlugin {
 
       })
       .catch((err: unknown) => {
+      const message =
+        err instanceof Error
+          ? `Error communicating with inverter - ${err.message}`
+          : 'Error communicating with inverter';
+  
+      if (this.connectivityerror) {
+        this.log.warn(message);
+        this.connectivityerror = false;
+      } else {
+        this.log.debug(message);
+      }
 
-        if (err instanceof Error) {
-          this.log.warn(
-            `Error communicating with inverter - ${err.message}`,
-          );
-        } else {
-          this.log.warn(
-            "Error communicating with inverter",
-          );
-        }
-
+  
         this.on = false;
         this.generating = false;
         this.currentlyGenerating = 0;
