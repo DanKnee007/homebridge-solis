@@ -1,6 +1,6 @@
 {
-  "name": "homebridge-solis-New",
-  "version": "1.0.3",
+  "name": "homebridge-solis-new",
+  "version": "1.0.12",
   "description": "A homebridge plugin that collects solar panel generation data from Solis PV inverters and publishes to the HomeKit system.",
   "main": "dist/accessory.js",
   "scripts": {
@@ -16,36 +16,34 @@
     "node": ">=10.17.0",
     "homebridge": ">=1.0.0"
   },
-  "dependencies": {
-    "solis-inverter": "fss/solis-inverter.git"
-  },
   "devDependencies": {
     "@types/node": "^14.14.6",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
     "eslint": "^7.13.0",
     "homebridge": "^1.2.3",
-    "nodemon": "^2.0.6",
+    "nodemon": "^3.1.14",
     "rimraf": "^3.0.2",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.4.4"
   },
   "files": [
     "LICENSE",
     "dist",
     "config.schema.json"
   ],
-  "repository": "github:DanKnee007/homebridge-solis",
+  "repository": "github:danknee007/homebridge-solis-new",
   "keywords": [
     "homebridge-plugin",
     "solis",
+    "inverter",
     "pv",
     "homekit"
   ],
   "author": "Dan Knee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonarnell/homebridge-solis/issues"
+    "url": "https://github.com/danknee007/homebridge-solis-new/issues"
   },
-  "homepage": "https://github.com/simonarnell/homebridge-solis#readme"
+  "homepage": "https://github.com/danknee007/homebridge-solis-new#readme"
 }
